@@ -1,0 +1,19 @@
+'''mermaid 
+sequenceDiagram
+participant Attacker
+participant BotNet
+participant WebServer
+participant Firewall
+'''
+    Attacker->>+BotNet: attack bots
+    BotNet->>+Attacker: bots infected
+    Attacker->>+BotNet: attack servers
+    BotNet->>+WebServer: attack initiated 
+    WebServer->>+Firewall: web server affected analyze traffic 
+    Firewall->>+WebServer: analyzing data
+    Firewall->>+WebServer: irregualrity detected 
+    WebServer->>+BotNet: firewall initiated
+    Firewall->>+BotNet: repell attack 
+    BotNet->>+Attacker: attack repelled 
+
+attacker attempts to hack servers and infects bots. infected bots target servers. firewall detect irregularities and deploys. preventing the attack.  
