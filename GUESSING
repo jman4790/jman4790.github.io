@@ -1,0 +1,20 @@
+'''MERMAID
+flowchart TD
+start([start])-->([end])'''
+    A[Guess a number] -->|Random number= 1-100| B[input= Random number]
+    B --> C{if input= Random number go to One
+    if input= does not equal Random number go to Two 
+    if input= is close to Random number go to Three
+    if input= is not a number go to Four}
+    C -->|One| D[Correct]
+    C -->|Two| E[So Wrong]
+    C -->|Three| F[sooo very close]
+    C -->|Four|G[Error]
+    D-->H
+    E-->H
+    F-->H
+    G-->H{THANK YOU FOR PLAYING
+    GAME OVER}
+
+
+this flow chart goes through the game step by step providing the random number to be generated and taking the users guess and determining whether it is correct or not.
